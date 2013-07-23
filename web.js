@@ -5,7 +5,9 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(fs.readFileSync(infile));
+len =  fs.readFileSync(infile, "utf-8");
+string = buf.toString('utf8', 0, len);
+response.send (string);
 });
 
 var port = process.env.PORT || 5000;
