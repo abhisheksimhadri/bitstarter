@@ -1,3 +1,4 @@
+
 var buf = new Buffer(250);
 var string;
 var fs = require('fs');
