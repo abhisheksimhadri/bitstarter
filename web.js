@@ -1,4 +1,4 @@
-var len;
+var len = new Buffer(25);
 var string;
 var fs = require('fs');
 var express = require('express');
