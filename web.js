@@ -1,11 +1,13 @@
+var len;
+var string;
 var fs = require('fs');
-var infile = "index.html";
+var infile = "./HW3/bitstarter/index.html";
 var express = require('express');
 var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-len =  fs.readFileSync(infile, "utf-8");
+len =  fs.readFileSync(infile, 'utf-8');
 string = buf.toString('utf8', 0, len);
 response.send (string);
 });
