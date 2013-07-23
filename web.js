@@ -6,7 +6,7 @@ var app = express();
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-len =  fs.readFileSync('./HW3/bitstarter/index.html', 'utf-8');
+len =  fs.readFileSync('./index.html', 'utf-8');
 string = buf.toString('utf8', 0, len);
 response.send (string);
 });
